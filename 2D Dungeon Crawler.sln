@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2D Dungeon Crawler", "2D Dungeon Crawler.csproj", "{68370B26-2FD9-E28F-D7F9-54C9ADF97E19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2D Dungeon Crawler.Editor", "2D Dungeon Crawler.Editor.csproj", "{1A2E9821-E3C9-2D9D-EA52-36F38FDEFCA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68370B26-2FD9-E28F-D7F9-54C9ADF97E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68370B26-2FD9-E28F-D7F9-54C9ADF97E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68370B26-2FD9-E28F-D7F9-54C9ADF97E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68370B26-2FD9-E28F-D7F9-54C9ADF97E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A2E9821-E3C9-2D9D-EA52-36F38FDEFCA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2E9821-E3C9-2D9D-EA52-36F38FDEFCA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2E9821-E3C9-2D9D-EA52-36F38FDEFCA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2E9821-E3C9-2D9D-EA52-36F38FDEFCA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

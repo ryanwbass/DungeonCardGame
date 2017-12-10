@@ -1,0 +1,297 @@
+************Game Design Log************
+
+
+=======================================
+Guide: 
+=======================================
+-Copy and paste the "Log Template" to the spacebelow this guide, and above the last entry in the log.
+-Set the "Date" to todays date.
+-Copy and paste the last logs "Tomorrow's To-Do List" in "Today's To-Do List".
+-Complete tasks in "Today's To-Do List" in the order they appear in.
+-Log EVERYTHING you do as you go.
+-When done, update "Tomorrow's To-Do List", placeing things in priority order 
+    -To-Do List Guide
+        -Break everything down into smaller steps
+        -If you see something that can be broken down, break it down
+        -Update or create a task, update task section
+
+Log Template:[
+***************************************
+Date: MM/DD/YYYY
+Today's To-Do List:{
+*-------------------------------
+*-------------------------------
+*-------------------------------
+}
+Log:{
+*-------------------------------
+*-------------------------------
+*-------------------------------
+}
+Tomorrow's To-Do List:{
+*-------------------------------
+*-------------------------------
+*-------------------------------
+}
+]
+=======================================
+Log: 
+=======================================
+
+***************************************
+Today's To-Do List:{
+*Make target dummy killable
+*Work on targeting UI
+|Figure out movement
+*item drops
+*projectiles
+*Write Story for game.
+*Read Night angle trilogy for inspiration
+}
+Log:{
+Switched movement scheme to be purely raycast based.
+Removed Ridgid body from player.
+}
+Tomorrow's To-Do List:{
+*-------------------------------
+*-------------------------------
+*-------------------------------
+}
+***************************************
+Date: MM/DD/YYYY
+Today's To-Do List:{
+|Add Basic target Dummy
+*Make target dummy killable
+*Work on targeting UI
+*Figure out movement
+*item drops
+*projectiles
+*Write Story for game.
+*Read Night angle trilogy for inspiration
+}
+Log:{
+For the mechanics of play I Want to change movement scheme to use 'Kinematic' BodyType.
+This means we do all collision detection and dont let physics determine movement.
+The end goal is that projectiles dont push enemies around, but we still are stopped at walls.
+
+For the story, think main character at beginning but female. 
+Tell a story about going from powerless to powerful and the characteristics of a person that tests.
+To emphasize the notion, the main character can be a female to enable a discussion about  and the struggle women face.
+}
+Tomorrow's To-Do List:{
+*Make target dummy killable
+*Work on targeting UI
+*Figure out movement
+*item drops
+*projectiles
+*Write Story for game.
+*Read Night angle trilogy for inspiration
+}
+***************************************
+Date: 11/21/2017
+Today's To-Do List:{
+|Set up basic scene
+|Add Create Card Container
+|Add Abilitys
+|Add Casting
+|Add Mana Management
+*Add Basic target Dummy
+*Work on targeting UI
+}
+Log:{
+*-------------------------------
+*-------------------------------
+*-------------------------------
+}
+Tomorrow's To-Do List:{
+*Add Basic target Dummy
+*Work on targeting UI
+}
+***************************************
+Date: MM/DD/YYYY
+Today's To-Do List:{
+|Make basic map with tilemap
+*Finish Game
+*Write Game Design Doc
+}
+Log:{
+Made basic scene in Unity with a player, floor, and walls
+}
+Tomorrow's To-Do List:{
+*Write Game Design doc
+*Finish Game
+}
+***************************************
+Date: 11/16/2017
+Today's To-Do List:{
+*Write Game Design Doc
+|Start Game
+*Make basic map with tilemap
+*Finish Game
+}
+Log:{
+Downloaded Unity 2017.2.0f3 with tile and tile map support
+Made basic scene to grid(tilemap) gameobject and having GameManager gameobject Instantiate it
+Changed to just having a grid in the scene with 3 layers, ForegroundLayer, CollisionLayer, BackgroundLayer
+Added "GridMaanger" Class to be an api to the "Grid" Component of the "Grid" GameObject.
+Got a refrence to GridManager in GameManager.
+
+}
+Tomorrow's To-Do List:{
+*Make basic map with tilemap
+*Finish Game
+*Write Game Design Doc
+}
+***************************************
+Date: 11/15/2017
+Today's To-Do List:{
+|Create log system for Game Design Doc
+*Write Game Design Doc
+*Start Game
+*Finish Game
+}
+Log:{
+Visited http://wannabe.urustar.net/ for information about game dev.
+Visited http://www.lostgarden.com/2011/05/game-design-logs.html for information about game logs and game docs.
+Began Writing the game Design doc, following "How to write a design log" section.
+Created the log system.
+Watched video https://www.youtube.com/watch?v=QKEzMz6FcXs&t=145s, "Understanding the Fantasy - How to Shape a Game's Design - Extra Credits".
+    -Took Notes on Pages 1-2 of Notebook.
+Looked at http://bestfantasybooks.com/fantasy-genre.php#arcanepunk-fantasy for infromation on subgenres of fantasy.
+}
+Tomorrow's To-Do List:{
+*Write Game Design Doc
+*Start Game
+*Finish Game
+}
+***************************************
+
+
+=======================================
++++++++++++++++++++++++++++++++++++++++
+=======================================
+******************Tasks****************
+
+|Set up basic scene
+|Add Create Card Container
+|Add Abilitys
+|Add Casting
+|Add Mana Management
+|Create log system for Game Design Doc
+*Write Game Design Doc
+|Start Game
+*Finish Game
+|Make basic map with tilemap
+*Add Basic target Dummy
+*Work on targeting UI
+
+
+
+
+=======================================
++++++++++++++++++++++++++++++++++++++++
+=======================================
+************Game Design Doc************
+
+
+Engine: 
+    -Unity 3D
+
+Language:
+    -C#
+
+Graphics:
+    -2D Top Down Camera 
+        -Inspirations: "Wizard of Legend"(http://wizardoflegend.com/)
+    -Art Style
+        -Pixel Art
+            -Inspirations:  "Wizard of Legend"(http://wizardoflegend.com/)
+                            "Duelyst"(https://duelyst.com/)
+                                -Samples of art: https://i2.wp.com/news.duelyst.com/wp-content/uploads/2016/09/characterlineup_wip05.jpg?fit=1920%2C1080&ssl=1
+        -Tile Based Levels
+            -Inspirations:  "Wizard of Legend"(http://wizardoflegend.com/)
+
+Controls:
+    -WASD: Move Character
+    -Mouse Pointer: Aim At Target
+    -Left-Click: Take Action
+
+    -Inspirations: "Overwatch", "Wizard of Legend"
+    -Possible Other Keys:   Spacebar
+                            Q
+                            E
+                            V
+                            R
+                            F
+                            Z
+                            C
+                            T
+                            Right Click
+                            Left-Shift
+                            Left-Control
+                            1
+                            2
+                            Scroll-Wheel
+                            Tab
+                            +Button Combos
+                            
+Gameplay:
+    -Pace: Real Time Fastpaced, Reaction Time is important
+        -Inspirations: "Wizard of Legend", "Diablo", "Overwatch"
+    -Focus: Combat Driven Gameplay
+        -Inspirations: "Wizard of Legend", "Diablo", "Overwatch"
+    -Combat:
+        -Spell/Ability Based Combat
+            -Inspirations: "Wizard of Legend", "Diablo", "Overwatch"
+        -Enemies: 
+            -Spread out around map
+            -Will fight player on sight
+            -Bosses are possible
+
+            -Inspirations: "Wizard of Legend", "Diablo", "Binding Of Issac"
+
+    
+*Concept:
+
+The main GamePlay loop will follow this pattern, more detial about each step is given below:
+
+1) Travel around over world
+|
+V
+2) Enter a "Dungeon-like" setting
+|
+V
+3) Gain loot and experience from that area
+|
+V
+4) Increase in power
+|
+V
+5) Game dificulty increases
+
+1) Travel around over world:
+
+    The game takes place in a 
+    
+
+
+
+=======================================
++++++++++++++++++++++++++++++++++++++++
+=======================================
+*****************Story*****************
+
+---------------------------------------
+Inspiration:
+Sexuality, not sex in games: https://www.youtube.com/watch?v=XP6gXZPVgD4&index=19&list=PLB9B0CA00461BB187
+Night Angle Trilogy
+Lazar, the goddess series
+---------------------------------------
+
+When you enter the game you come down through a swirl of stormy coulds and the camera focuses upon a small figure of a person.
+They are shrouded from the rain in a cloak make of beaten material, huddleing in an alleyway across the road from a bakery.
+
+
+
+
+
